@@ -16,3 +16,30 @@
     font-family: 'inter', sans-serif;
     text-decoration: none;
 }
+body{
+    height: 100vh;
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 2rem;
+}
+.header-content{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    margin: 0 auto;
+
+}
+.logo{
+  display: flex;  
+  font-size: 2rem;
+  align-items: center;
+  font-weight: bold;
+  height: 2px;
+  width: 2px;
+
+}
+.logo-icon{
+    border-radius: 3px;
+}
