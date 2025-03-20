@@ -63,6 +63,17 @@ body{
 .nav-link:hover{
     color: blue;
 }
+.main-section{
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.6rem;
+    margin: auto;
+    align-items: center;
+
+
+}
 .nav-link{
     display: flex;
     justify-content: space-between;
@@ -110,4 +121,37 @@ body{
 .img-container{
     height: 50px;
     width: 60px;
+}
+.content-left {  /* Added the missing dot before the class name */
+    margin: 3rem;
+    padding: 4rem;
+    animation: slideFromLeft 1s ease forwards; /* Fixed the animation name and duration */
+    opacity: 0;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%); /* Added the unit % for proper translation */
+    }
+    100% {
+        opacity: 1; /* Use 1 instead of 100 for opacity */
+        transform: translateX(0);
+    }
+}
+.section-level{
+    font-weight: 600;
+    color: var(--access-color);
+}
+.section-title{
+    font: 300;
+    padding: 1rem;
+}
+.section-description{
+    color: var(--gray);
+    font-size: 1.12 rem;
+}
+.button-group{
+    
+
 }
