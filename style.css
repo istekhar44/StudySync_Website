@@ -250,73 +250,93 @@ body {
     }
 }
 .feature-content{
-    width: 110vw;
-    height: 80vh;
-    margin: 2rem;
-    justify-content: center;
+   
+    width: 100%;
 }
-.feature-text{
-    font-variant: var(--dark-gray);
-    font-size: 1.6rem;
-}
-.feature-para{
+.feature-text, .para-1 ,.text-1 , .logo3 , .grid-Box {
+    
+    display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(26, 24, 24);
+    margin: auto;
+    margin: 1rem;   
+}
+
+.logo3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.text-1{
+    font-weight: 600;
 }
 .grid-Box{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin: rem;
-    padding: rem;
-
+    /* padding: 5rem; */
+    gap: 1.3rem;
+    height: 70%;
+    width: 80%;
+    margin: 10rem;
+    margin-top: 40px;
+    padding-top: 20px;
+   
 }
-.grid-Box{
-    background-color: pink;
-}
-.grid-element{
-    margin: 2rem;
-    /* padding: 1rem; */
-    background-color: #0d42f0;
-    border-radius: 5%;
-
-}
-.logo3{
-    height: 40px;
-    margin: 2rem;
-    width: 40px;
-    border-radius: 50%;
-    justify-content: center;
+.in-box-grid{
+    
+    padding: 5px;
+    justify-items: center;
+    margin: 1rem;
+    height: 10rem;
+    width: 12rem;
+    
     
 }
-.text-1{ 
-  font-weight: 600;
-  justify-content: center;
-  align-items: center;  
-}
 .grid-element1{
-    background-color: rgb(45, 138, 245) ;
-    margin: 2rem;
-    /* padding: 1rem; */
-    background-color: #0d42f0;
-    height: 30rem;
-    width: 50rem;
-    border-radius: 20%;
+    background-color: #d6b149;
+    height: 16rem;
+    width: 12rem; border-radius: 5px;
 }
 .grid-element2{
-    background-color: rgb(216, 38, 157);
+    background-color: #bde433;
+    height: 16rem;
+    width: 12rem;border-radius: 5px;
 }
 .grid-element3{
-    background-color: rgb(74, 205, 223);
+    background-color: #9fee8c;
+    height: 16rem;
+    width: 12rem;border-radius: 5px;
 }
 .grid-element4{
-    background-color: rgb(206, 79, 223);
+    background-color: #5deb70;
+    height: 16rem;
+    width: 12rem;border-radius: 5px;
 }
 .grid-element5{
-    background-color: greenyellow ;
+    background-color: #2adce9;
+    height: 16rem;
+    width: 12rem;border-radius: 5px;
 }
 .grid-element6{
-    background-color: burlywood;
+    background-color: #509fe9;
+    height: 16rem;
+    width: 12rem;border-radius: 5px;
 }
-
-
+/* Add responsive ness */
+@media  screen and (max-width: 760px) {
+    .grid-Box{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    
+}
+@media  screen and (max-width: 460px) {
+    .grid-Box{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    
+}
